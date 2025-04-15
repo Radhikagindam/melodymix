@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MelodyMix - Legendary Artists</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #e0f7fa;
+      --secondary: #b2ebf2;
+      --accent: #00acc1;
+      --dark: #006064;
+      --white: #ffffff;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--primary);
+      color: var(--dark);
+    }
+
+    header {
+      background: linear-gradient(to right, #b2ebf2, #e0f7fa);
+      padding: 2rem;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0, 172, 193, 0.2);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    .artist-section {
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+      padding: 2rem;
+    }
+
+    .artist-block {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      background: var(--secondary);
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: 0 6px 16px rgba(0, 172, 193, 0.2);
+      flex-wrap: wrap;
+    }
+
+    .artist-block:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+
+    .artist-image {
+      flex: 1 1 250px;
+    }
+
+    .artist-image img {
+      width: 100%;
+      border-radius: 12px;
+      max-height: 300px;
+      object-fit: cover;
+    }
+
+    .artist-info {
+      flex: 2;
+    }
+
+    .artist-info h2 {
+      margin: 0 0 1rem;
+      font-size: 1.8rem;
+      color: var(--dark);
+    }
+
+    .artist-info p {
+      font-size: 1rem;
+    }
+
+    .song-links {
+      margin-top: 1rem;
+    }
+
+    .song-links a {
+      display: inline-block;
+      margin: 0.3rem 0.5rem 0.3rem 0;
+      padding: 0.5rem 1rem;
+      background-color: var(--accent);
+      color: var(--white);
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background-color 0.3s;
+    }
+
+    .song-links a:hover {
+      background-color: var(--dark);
+    }
+
+    footer {
+      background: var(--accent);
+      color: var(--white);
+      padding: 3rem 1rem;
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .vertical-form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      max-width: 500px;
+      margin: 0 auto;
+      background-color: var(--white);
+      padding: 2rem;
+      border-radius: 12px;
+      color: var(--dark);
+    }
+
+    .vertical-form label {
+      font-weight: 600;
+    }
+
+    .vertical-form input,
+    .vertical-form textarea {
+      padding: 0.7rem;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    .vertical-form button {
+      background-color: var(--accent);
+      color: var(--white);
+      padding: 0.75rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .vertical-form button:hover {
+      background-color: var(--dark);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🎵 MelodyMix - Honoring Music Legends</h1>
+  </header>
+
+  <section class="artist-section">
+    <div class="artist-block">
+      <div class="artist-image">
+        <img src="https://st1.bollywoodlife.com/wp-content/uploads/2024/01/ar-rahman.png" alt="A.R. Rahman">
+      </div>
+      <div class="artist-info">
+        <h2>A.R. Rahman</h2>
+        <p>A.R. Rahman revolutionized Indian music with his fusion of classical Indian music and electronic beats. Music is a spiritual journey for him, and he uses it to convey peace, emotion, and storytelling across global platforms.</p>
+        <div class="song-links">
+          <a href="https://www.jiosaavn.com/song/poolane-kunukeyamantaa/GxwESR5aRGI" target="_blank">Poolane Kunukeyamantaa</a>
+          <a href="https://www.jiosaavn.com/song/preminche-premava/MyYCBTN1fQQ" target="_blank">Preminche Premava</a>
+          <a href="https://www.jiosaavn.com/song/new-york-nagaram/KRgNXxpAe1E" target="_blank">New York Nagaram</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="artist-block">
+      <div class="artist-image">
+        <img src="https://content.tupaki.com/twdata/2015/1115/news/Ilayaraja-s-Remedy-for-Violence-1448037945-1059.jpg" alt="Ilaiyaraaja">
+      </div>
+      <div class="artist-info">
+        <h2>Ilaiyaraaja</h2>
+        <p>Ilaiyaraaja, known as the Maestro, has composed over 7,000 songs. For him, music is divine and rooted in deep classical traditions. His unique orchestration and use of Indian ragas have touched millions, blending folk with Western classical.</p>
+        <div class="song-links">
+          <a href="https://www.jiosaavn.com/song/kammani/KV49BCxzUnoU" target="_blank">Kammani </a>
+          <a href="https://www.jiosaavn.com/song/yedhi-yedhi/NAMISQ5FBUU" target="_blank">Yedhi Yedhi</a>
+          <a href="https://www.jiosaavn.com/song/jabilli-kosam-female/CAkzX0R9fEI" target="_blank">Jabilli Kosam</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="artist-block">
+      <div class="artist-image">
+        <img src="https://tse3.mm.bing.net/th?id=OIP.5F-e_OMCVvXMLiiqSgpK4QHaFj&pid=Api&P=0&h=180" alt="Karthik">
+      </div>
+      <div class="artist-info">
+        <h2>Karthik</h2>
+        <p>Karthik is known for his soulful and romantic renditions in multiple Indian languages. Music for Karthik is about connecting with listeners’ emotions. His voice bridges generations while evolving with modern musical trends.</p>
+        <div class="song-links">
+          <a href="https://www.jiosaavn.com/song/girl-friend/CCJdAx1HGmk" target="_blank">Girl Friend</a>
+          <a href="https://www.jiosaavn.com/song/arey-rey/QCwkQR9hXQI" target="_blank">Arey Rey</a>
+          <a href="https://www.jiosaavn.com/song/kallu-moosi-yochisthey/ODtTBDJYQks" target="_blank">Kallu Moosi Yochisthey</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <h2>💬 Suggest Your Favorite Song!</h2>
+    <p>We’d love to know your top pick. Fill out the form below!</p>
+    <form class="vertical-form" action="https://submit-form.com/dAn6wtTH8">
+      <label for="first-name">First name</label>
+      <input id="first-name" name="first-name" type="text" required />
+
+      <label for="last-name">Last name</label>
+      <input id="last-name" name="last-name" type="text" required />
+
+      <label for="message">Your Favorite Song</label>
+      <textarea id="message" name="message" rows="4" placeholder="Share your favorite track..." required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </footer>
+  <footer style="background-color: #19c9d8; color: #ffffff; text-align: center; padding: 1rem; font-size: 0.9rem;">
+    Created with ❤️ by Radhika Gindam<br>
+    📩 For any queries, contact: <a href="mailto:radhikachitti2005@gmail.com" style="color: #ffffff; text-decoration: underline;">radhikachitti2005@gmail.com</a><br>
+    
+  </footer>
+  
+</body>
+</html>
